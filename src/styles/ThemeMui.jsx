@@ -3,15 +3,47 @@ import {createTheme} from "@mui/material";
 export const lightTheme = createTheme({
     palette: {
       mode: 'light',
-      primary: {
-        main: '#581859',
-        light: '#812471',
-        dark: '#3d113e',
+      common: {
+        black: 'red', //textos del tooltip
+        white: 'red',
       },
-      
+      primary: {
+        main: '#E05297',
+        light: '#e785b4',
+        dark: '#c70064',
+        contrastText: '#E0E2E5', //textos de nav
+      },
+      secondary:{
+        main: 'green',
+        light: 'green',
+        dark: 'green',
+        contrastText: 'green', 
+      },
+      grey:{
+        50: '#0000ff', // fondo del tooltip
+        100: '#0000ff',
+        200: '#0000ff',
+        300: '#0000ff',
+        400: '#0000ff',
+        500: '#0000ff',
+        600: '#0000ff',
+        700: '#0000ff',
+        800: '#0000ff',
+        900: '#0000ff',
+        A100: '#0000ff',
+        A200: '#0000ff',
+        A400: '#0000ff',
+        A700: '#0000ff',
+      },
+      text: { //color de texto simple
+        primary: '#78716c',
+        secondary: '#78716c',
+        disabled: '#78716c',
+      },
+      divider: '#FAD9E6',
       background: {
-        paper: '#fff',
-        default: '#dbd4ad',
+        paper: '#ffffff',
+        default: '#FCEEF5',
       },
     },
   });
@@ -19,57 +51,6 @@ export const lightTheme = createTheme({
 export const darkTheme = createTheme({
     palette: {
       mode: 'dark',
-      primary: {
-        main: '#7d4a7c',
-        light: '#8f638d',
-        dark: '#6a326a',
-      },
-      secondary: {
-        main: '#7b2876',
-        light: '#8b2d84',
-        dark: '#6c2367',
-      },
-      background: {
-        paper: '#0E050E',
-        default: '#252025',
-      },
+      
     },
   });
-
-
-  // paleta inicial de colores
-// export const lightTheme = createTheme({
-//   palette: {
-//     mode: 'light',
-//     primary: {
-//       main: '#59143a',
-//       light: '#93184d',
-//       dark: '#7e1746',
-//     },
-//     secondary: {
-//       main: '#591d55',
-//       light: '#942271',
-//       dark: '#7f2167',
-//     },
-//     background: {
-//       paper: '#e0e0e0',
-//       default: '#D9CAAD',
-//     },
-//   },
-// });
-  
-// export const darkTheme = createTheme({
-//     palette: {
-//       mode: 'dark',
-//       primary: {
-//         main: '#a71953',
-//         light: '#b71a56',
-//         dark: '#93184d',
-//       },
-//       secondary: {
-//         main: '#aa237b',
-//         light: '#bb2381',
-//         dark: '#942271',
-//       },
-//     },
-//   });

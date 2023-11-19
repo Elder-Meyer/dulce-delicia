@@ -22,7 +22,7 @@
     "chart.js": "^4.3.0",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.8",
-    "firebase": "^9.22.2",
+    "firebase": "^9.23.0",
     "firebase-tools": "^12.7.0",
     "formik": "^2.4.2",
     "https-browserify": "^1.0.0",
