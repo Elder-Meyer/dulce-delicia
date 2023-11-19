@@ -488,7 +488,7 @@ export const FormRegistro = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Button
-                    aria-label="limpiar formulario de registro en corazón huasteco"
+                    aria-label="limpiar formulario de registro en Dulce Delicia"
                     type="button"
                     fullWidth
                     variant="outlined"

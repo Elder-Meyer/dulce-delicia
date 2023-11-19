@@ -46,7 +46,7 @@ export const FormAcceso = () => {
   return (
     <Container maxWidth="sm">
         <Paper sx={{p:2}} elevation={0}>
-            <Typography variant="h4" color="primary" textAlign='center' >Inicia sesión en Corazón Huasteco</Typography>
+            <Typography variant="h4" color="primary" textAlign='center' >Inicia sesión en Dulce Delicia</Typography>
             <Typography variant='body1' color="primary.light" textAlign='center' mb={3}>Explora, guarda y opina sobre los articulos mas interesantes de la región.</Typography>
             {/* mensajes */}
             <SimpleBackdrop open={open}/>{/*alerta y loading*/}
@@ -136,7 +136,7 @@ export const FormAcceso = () => {
                 {/* enlaces */}
                 <Grid container spacing={1}>
                     <Grid item xs >
-                        <Typography textAlign="center" variant='body2'>¿Sin cuenta? <Link to="/registro" aria-label='ir a la sección de registro en corazón huasteco'>registrate</Link></Typography>
+                        <Typography textAlign="center" variant='body2'>¿Sin cuenta? <Link to="/registro" aria-label='ir a la sección de registro en Dulce Delicia'>registrate</Link></Typography>
                     </Grid>
                     <Grid item xs >
                         <Typography textAlign="center" variant="body2"><Link to="/acceso/restaurar-pass" aria-label='ir a la sección de restaurar contraseña'>Restablecer</Link></Typography>

@@ -2,37 +2,37 @@ import { AccountBalance, AccountBalanceOutlined, Book, BookOutlined, Label, Labe
 
 export const navLinks =[
     {
-      title: "Tematicas",
+      title: "Marcas",
       path: "/tematicas", 
       icon: <LabelOutlined />,
       iconSelected: <Label />
     },
     {
-      title: "ChatBot",
+      title: "Categorias",
       path: "/chatbot", 
       icon: <SmartToyOutlined />,
       iconSelected: <SmartToy/>
     },
     {
-      title: "Nosotros",
+      title: "Temporadas",
       path: "/sobre-nosotros", 
       icon: <AccountBalanceOutlined/>,
       iconSelected: <AccountBalance />
     },
     {
-      title: "Donaciones",
+      title: "Personajes",
       path: "/donaciones", 
       icon: <VolunteerActivismOutlined/>,
       iconSelected: <VolunteerActivism />
     },
     {
-      title: "Colaboradores",
+      title: "Mesas de Dulces",
       path: "/creadores-de-contenido", 
       icon: <BookOutlined/>,
       iconSelected: <Book />
     },
     {
-      title: "Tienda",
+      title: "Reposteria",
       path: "/tienda", 
       icon: <StoreOutlined/>,
       iconSelected: <Store />

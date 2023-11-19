@@ -101,7 +101,7 @@ export const NavBar = (props) => {
     <>
       <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
         <Typography variant="h6" sx={{ my: 2 }}>
-          Corazón Huasteco
+          Dulce Delicia
         </Typography>
         <Divider />
         <List>
@@ -151,7 +151,7 @@ export const NavBar = (props) => {
           {/* Primer tool */}
           {/* desktop*/}
           <Toolbar sx={{ display: { xs: "none", md: "flex" }}}>
-            <AnimatedIcon component={Link} to='/' aria-label='Ir al inicio de Corazón Huasteco' />
+            <AnimatedIcon component={Link} to='/' aria-label='Ir al inicio de Dulce Delicia' />
             <Box sx={{flexGrow:1}}>
 
             <Tooltip title="Volver al inicio" arrow placement="right">
@@ -164,9 +164,9 @@ export const NavBar = (props) => {
                   textDecoration: "none",
                   color: "inherit",
                 }}
-                aria-label="Ir al inicio de Corazón Huasteco"
+                aria-label="Ir al inicio de Dulce Delicia"
               >
-                CORAZÓN HUASTECO
+                DULCE DELICIA
               </Typography>            
             </Tooltip>
             </Box>
@@ -230,7 +230,7 @@ export const NavBar = (props) => {
                   color: "inherit",
                   textDecoration: "none",
                 }}
-                aria-label="Ir al inicio de Corazón Huasteco"
+                aria-label="Ir al inicio de Dulce Delicia"
               >  
                 <AnimatedIcon/>
               </Typography>

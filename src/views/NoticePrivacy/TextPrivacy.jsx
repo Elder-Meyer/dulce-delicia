@@ -228,7 +228,7 @@ export const TextPrivacy = () => {
         <Typography variant="body1" component="p">
           Página de Internet:{" "}
           <a href="https://uthh.online/corazon.divider.html">
-            Corazón huasteco
+            Dulce Delicia
           </a>
         </Typography>
         <Typography variant="body1" component="p">

@@ -81,7 +81,7 @@ export const Footer = () => {
               </Grid>
               <Grid item container justifyContent={{xs: "center", sm: "flex-start", md: "flex-start"}}>
                 <Typography variant="body1" sx={{color: theme.palette.background.paper}}>
-                  &#169; Corazón Huasteco 2023
+                  &#169; Dulce Delicia 2023
                 </Typography>
               </Grid>
             </Grid>
