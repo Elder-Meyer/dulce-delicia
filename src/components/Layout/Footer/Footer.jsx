@@ -4,9 +4,10 @@ import MuiAlert from '@mui/material/Alert';
 import { LinkStyled }                       from './footer.elements'
 import imgLogo1                             from "../../../assets/img/app/imgLogoHuejutlaLight.webp"
 import UseAnimations                        from 'react-useanimations';
-import facebook                             from "react-useanimations/lib/facebook";
-import youtube                              from "react-useanimations/lib/youtube";
-import instagram                            from "react-useanimations/lib/instagram";
+import twitter                              from "react-useanimations/lib/twitter"
+import mail                                 from "react-useanimations/lib/mail";
+import linkedin                             from "react-useanimations/lib/linkedin";
+
 import { Link }                             from 'react-router-dom';
 
 const LANGUAGES = [
@@ -53,27 +54,72 @@ export const Footer = () => {
 
       <Container>
         <Grid container spacing={2} pb={3}>
-          {/* REDES */}
-          <Grid item xs={12} sm={4} md={3} order={{xs: 6, sm: 1, md: 1}} container alignItems="center">
+          {/* Nosotros */}
+          <Grid item xs={12} sm={4} md={3} order={{xs: 1, sm: 1, md: 1}} container direction="column" alignItems="flex-start">
+            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
+              Nosotros
+            </Typography>
+            <LinkStyled to="sobre-nosotros">¿Quiénes Somos?</LinkStyled>
+            <LinkStyled to="sobre-nosotros">Sucursales</LinkStyled>
+            <LinkStyled to="sobre-nosotros">Contacto</LinkStyled>
+            <LinkStyled to="sobre-nosotros">Blog</LinkStyled>
+            <LinkStyled to="sobre-nosotros">TODOS LOS PRODUCTOS</LinkStyled>
+            <LinkStyled to="aviso-de-privacidad">Términos del servicio</LinkStyled>
+            <LinkStyled to="aviso-de-privacidad">Política de reembolso</LinkStyled>
+          </Grid>
+
+          {/* Ayuda */}
+          <Grid item xs={12} sm={4} md={3} order={{xs: 2, sm: 2, md: 2}} container direction="column" alignItems="flex-start">
+            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
+              Ayuda
+            </Typography>
+            <LinkStyled to="">¿Cómo comprar?</LinkStyled>
+            <LinkStyled to="#">Envíos</LinkStyled>|
+            <LinkStyled to="#">Facturas</LinkStyled>
+            <LinkStyled to="preguntas-frecuentes">Preguntas frecuentes</LinkStyled>
+            <LinkStyled to="aviso-de-privacidad">Terminos y condiciones</LinkStyled>
+            <LinkStyled to="aviso-de-privacidad">Aviso dee privacidad</LinkStyled>
+          </Grid>
+
+          {/* Comprar */}
+          <Grid item xs={12} sm={4} md={3} order={{xs: 3, sm: 3, md: 3}} container direction="column" alignItems="flex-start">
+            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
+              Comprar
+            </Typography>
+            <LinkStyled to="tematicas/vestimenta">Descuentos</LinkStyled>
+            <LinkStyled to="tematicas/danza">Formas de Pago</LinkStyled>
+            <LinkStyled to="tematicas/gastronomia">Lo más buscado</LinkStyled>
+            <LinkStyled to="tematicas/musica">Mayoreo</LinkStyled>
+            <LinkStyled to="tematicas/tradiciones">Productos nuevos</LinkStyled>
+          </Grid>
+
+          {/* contacto */}
+          <Grid item xs={12} sm={6} md={3} order={{xs: 4, sm: 4, md: 4}} container direction="column" alignItems="flex-start">
+            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
+              Mantente en contacto
+            </Typography>
+            <Typography variant="body2" component="p" sx={{ color: theme.palette.background.paper }}>
+              Siguenos en nuestras redes.
+            </Typography>
             <Grid container direction="column" justifyContent="center" spacing={2}>
               <Grid item container direction="row" justifyContent={{xs: "center", sm: "flex-start", md: "flex-start"}} wrap='nowrap'>
-                <Link to='https://es-la.facebook.com/' target='_BLANK' aria-label='Ir a la página de Facebook'>
+                <Link to='https://www.linkedin.com/' target='_BLANK' aria-label='Ir a la página de Instagram'>
                   <UseAnimations
-                    animation={facebook}
+                    animation={linkedin}
                     size={56} 
                     strokeColor={theme.palette.background.default} 
                   />
                 </Link>
-                <Link to='https://www.instagram.com/' target='_BLANK' aria-label='Ir a la página de Instagram'>
+                <Link to='https://gmail.com/' target='_BLANK' aria-label='Ir a la página de YouTube'>
                   <UseAnimations
-                    animation={instagram}
+                    animation={mail}
                     size={56} 
                     strokeColor={theme.palette.background.default} 
                   />
                 </Link>
-                <Link to='https://youtube.com/' target='_BLANK' aria-label='Ir a la página de YouTube'>
+                <Link to='https://x.com/' target='_BLANK' aria-label='Ir a la página de Facebook'>
                   <UseAnimations
-                    animation={youtube}
+                    animation={twitter}
                     size={56} 
                     strokeColor={theme.palette.background.default} 
                   />
@@ -86,37 +132,23 @@ export const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-          {/* ENLACES */}
-          <Grid item xs={12} sm={4} md={3} order={{xs: 1, sm: 3, md: 2}} container direction="column" alignItems="flex-start">
-            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
-              Categorias
-            </Typography>
-            <LinkStyled to="tematicas/vestimenta">Vestimenta</LinkStyled>
-            <LinkStyled to="tematicas/danza">Danza</LinkStyled>
-            <LinkStyled to="tematicas/gastronomia">Gastronomia</LinkStyled>
-            <LinkStyled to="tematicas/musica">Música</LinkStyled>
-            <LinkStyled to="tematicas/tradiciones">Tradiciones</LinkStyled>
+   
+          {/* LOGO */}
+          <Grid item xs={12} sm={12} md={9} order={{xs: 6, sm: 6, md: 5}} container direction="row" justifyContent={{xs:"center", sm: "flex-end", md:"flex-start"}}>
+            <CardMedia
+              sx={{
+                width: 90,
+                bgcolor: "transparent",
+              }}
+              component="img"
+              height={90}
+              image={imgLogo1}
+              alt="icono-huejutla"
+            />
           </Grid>
-          <Grid item xs={12} sm={4} md={3} order={{xs: 2, sm: 4, md: 3}} container direction="column" alignItems="flex-start">
-            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
-              Sobre Nosotros
-            </Typography>
-            <LinkStyled to="sobre-nosotros">Nuestra historia</LinkStyled>
-            <LinkStyled to="sobre-nosotros">Misión, visión y valores</LinkStyled>
-            <LinkStyled to="sobre-nosotros">Carreras</LinkStyled>
-            <LinkStyled to="aviso-de-privacidad">Politicas de privacidad</LinkStyled>
-            <LinkStyled to="aviso-de-privacidad">Terminos del servicio</LinkStyled>
-          </Grid>
-          <Grid item xs={12} sm={4} md={3} order={{xs: 3, sm: 5, md: 4}} container direction="column" alignItems="flex-start">
-            <Typography variant="h6" component="p" sx={{ color: theme.palette.background.paper }}>
-              Soporte
-            </Typography>
-            <LinkStyled to="preguntas-frecuentes">Preguntas frecuentes</LinkStyled>
-            <LinkStyled to="#">Ayuda en linea</LinkStyled>
-            <LinkStyled to="#">Confianza y seguridad</LinkStyled>
-          </Grid>
+          
           {/* LENGUAJE */}
-          <Grid item xs={12} sm={8} md={9} order={{xs: 4, sm: 2, md: 5}}>
+          <Grid item xs={12} sm={6} md={3} order={{xs: 5, sm: 5, md: 6}}>
             <Typography variant="subtitle1" component="label" htmlFor='language' sx={{ color: theme.palette.background.paper, display: 'block' }}>
               Selecciona un Idioma:
             </Typography>
@@ -149,19 +181,6 @@ export const Footer = () => {
                 </option>
               ))}
             </TextField>
-          </Grid>
-          {/* LOGO */}
-          <Grid item xs={12} sm={12} md={3} order={{xs: 5, sm: 6, md: 6}} container direction="row" justifyContent={{xs:"center", sm: "flex-end", md:"flex-start"}}>
-            <CardMedia
-              sx={{
-                width: 90,
-                bgcolor: "transparent",
-              }}
-              component="img"
-              height={90}
-              image={imgLogo1}
-              alt="icono-huejutla"
-            />
           </Grid>
         </Grid>
       </Container>
