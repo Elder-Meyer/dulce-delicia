@@ -236,7 +236,7 @@ export const NavBar = (props) => {
               {navLinks.map((item) => (
                 <Button
                   aria-label={`botón para ir a la sección de ${item.title}`}
-                  startIcon={item.path === location.pathname ? item.iconSelected : item.icon }
+                  endIcon={item.path === location.pathname ? item.iconSelected : item.icon }
                   key={item.title}
                   onClick={handleCloseNavMenu}
                   sx={{

@@ -1,4 +1,4 @@
-import {useScrollTrigger, Box} from '@mui/material';
+import {useScrollTrigger, Box, Slide} from '@mui/material';
 import React from 'react';
 import logoLight from '../../../assets/img/app/imgLogoHuejutlaLight.webp'
 
@@ -8,14 +8,14 @@ export function ElevationScroll(props) {
   // will default to window.
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
     target: window ? window() : undefined,
   });
 
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
 }
 
 export function AnimatedIcon({animation}){
