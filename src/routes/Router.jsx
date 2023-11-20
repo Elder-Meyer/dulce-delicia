@@ -4,7 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { NavBar }               from '../components/Layout/NavBar/NavBar'
 import { Footer }               from '../components/Layout/Footer/Footer'
 // routes components
-const ChatBot               = lazy(() => import('../views/ChatBot/ChatBot').then((module) => ({ default: module.ChatBot })))
+const Categorias               = lazy(() => import('../views/Categorias/Categorias').then((module) => ({ default: module.Categorias })))
 const SobreNosotros         = lazy(() => import('../views/AboutUs/SobreNosotros').then((module) => ({ default: module.SobreNosotros })))
 const Acceso                = lazy(() => import('../views/Access/Acceso').then((module) => ({ default: module.Acceso })))
 const AvisoDePrivacidad     = lazy(() => import('../views/NoticePrivacy/AvisoDePrivacidad').then((module) => ({ default: module.AvisoDePrivacidad })))
@@ -78,7 +78,7 @@ export const Router = (props) => {
                   {/*rutasDeAplicacion*/}
                   <Route path='/'                       element={<Navigate to='/inicio'/>}/>
                   <Route path='/inicio'                 element={<Inicio/>} />
-                  <Route path='/chatbot'                element={<ChatBot/>} />
+                  <Route path='/categorias'             element={<Categorias/>} />
                   <Route path='/sobre-nosotros'         element={<SobreNosotros/>} />
                   <Route path='/donaciones'             element={<Donaciones/>} />
                   <Route path='/creadores-de-contenido' element={<CreadoresDeContenido/>} />

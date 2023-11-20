@@ -20,7 +20,7 @@ export const navLinks =[
     },
     {
       title: "Categorias",
-      path: "/chatbot", 
+      path: "/categorias", 
       icon: <CategoryOutlinedIcon />,
       iconSelected: <CategoryIcon/>
     },
