@@ -8,11 +8,11 @@ const Categorias            = lazy(() => import('../views/Categorias/Categorias'
 const SobreNosotros         = lazy(() => import('../views/AboutUs/SobreNosotros').then((module) => ({ default: module.SobreNosotros })))
 const Temporadas            = lazy(() => import('../views/Temporadas/Temporadas').then((module) => ({ default: module.Temporadas })))    
 const Personajes            = lazy(() => import('../views/Personajes/Personajes').then((module) => ({ default: module.Personajes })))   
+const MesasDeDulces         = lazy(() => import('../views/MesasDeDulces/MesasDeDulces').then((module) => ({ default: module.MesasDeDulces })))
 
 
 const Acceso                = lazy(() => import('../views/Access/Acceso').then((module) => ({ default: module.Acceso })))
 const AvisoDePrivacidad     = lazy(() => import('../views/NoticePrivacy/AvisoDePrivacidad').then((module) => ({ default: module.AvisoDePrivacidad })))
-const CreadoresDeContenido  = lazy(() => import('../views/ContentCreators/CreadoresDeContenido').then((module) => ({ default: module.CreadoresDeContenido })))
 const Error                 = lazy(() => import('../views/Error/Error').then((module) => ({ default: module.Error })))
 import { Inicio } from '../views/Home/Inicio'
 const PreguntasFrecuentes   = lazy(() => import('../views/FAQ/PreguntasFrecuentes').then((module) => ({ default: module.PreguntasFrecuentes })))
@@ -78,9 +78,9 @@ export const Router = (props) => {
                     <Route path='/categorias'             element={<Categorias/>} />
                     <Route path='/temporadas'             element={<Temporadas/>} />
                     <Route path='/personajes'             element={<Personajes/>} />
+                    <Route path='/mesas-de-dulces'        element={<MesasDeDulces/>} />
 
                     <Route path='/sobre-nosotros'         element={<SobreNosotros/>} />
-                    <Route path='/creadores-de-contenido' element={<CreadoresDeContenido/>} />
                     <Route path='/tienda'                 element={<Tienda/>} />
                     <Route path='/tienda/:id'             element={<DetalleProduct productos={productos}/> } />
                     <Route path='/aviso-de-privacidad'    element={<AvisoDePrivacidad/>} />

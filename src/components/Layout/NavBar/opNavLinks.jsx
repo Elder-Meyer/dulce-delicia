@@ -30,7 +30,7 @@ export const navLinks =[
     },
     {
       title: "Mesas de Dulces",
-      path: "/creadores-de-contenido", 
+      path: "/mesas-de-dulces", 
       icon: <TableRestaurantOutlinedIcon/>,
       iconSelected: <TableRestaurantIcon />
     },
