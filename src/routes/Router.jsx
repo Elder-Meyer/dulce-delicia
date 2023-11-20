@@ -12,7 +12,6 @@ const CreadoresDeContenido  = lazy(() => import('../views/ContentCreators/Creado
 const Donaciones            = lazy(() => import('../views/Donations/Donaciones').then((module) => ({ default: module.Donaciones })))   
 const Error                 = lazy(() => import('../views/Error/Error').then((module) => ({ default: module.Error })))
 import { Inicio } from '../views/Home/Inicio'
-const Mapa                  = lazy(() => import('../views/Home/Mapa/Mapa').then((module) => ({ default: module.Mapa })))
 const PreguntasFrecuentes   = lazy(() => import('../views/FAQ/PreguntasFrecuentes').then((module) => ({ default: module.PreguntasFrecuentes })))
 const Registro              = lazy(() => import('../views/Register/Registro').then((module) => ({ default: module.Registro })))
 const RestorePassword       = lazy(() => import('../views/RestorePass/RestorePassword').then((module) => ({ default: module.RestorePassword })))
@@ -79,7 +78,6 @@ export const Router = (props) => {
                   {/*rutasDeAplicacion*/}
                   <Route path='/'                       element={<Navigate to='/inicio'/>}/>
                   <Route path='/inicio'                 element={<Inicio/>} />
-                  <Route path='/mapa'                   element={<Mapa/> } />
                   <Route path='/chatbot'                element={<ChatBot/>} />
                   <Route path='/sobre-nosotros'         element={<SobreNosotros/>} />
                   <Route path='/donaciones'             element={<Donaciones/>} />
