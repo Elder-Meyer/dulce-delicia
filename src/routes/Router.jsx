@@ -4,8 +4,11 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { NavBar }               from '../components/Layout/NavBar/NavBar'
 import { Footer }               from '../components/Layout/Footer/Footer'
 // routes components
-const Categorias               = lazy(() => import('../views/Categorias/Categorias').then((module) => ({ default: module.Categorias })))
+const Categorias            = lazy(() => import('../views/Categorias/Categorias').then((module) => ({ default: module.Categorias })))
 const SobreNosotros         = lazy(() => import('../views/AboutUs/SobreNosotros').then((module) => ({ default: module.SobreNosotros })))
+const Temporadas            = lazy(() => import('../views/Temporadas/Temporadas').then((module) => ({ default: module.Temporadas })))    
+
+
 const Acceso                = lazy(() => import('../views/Access/Acceso').then((module) => ({ default: module.Acceso })))
 const AvisoDePrivacidad     = lazy(() => import('../views/NoticePrivacy/AvisoDePrivacidad').then((module) => ({ default: module.AvisoDePrivacidad })))
 const CreadoresDeContenido  = lazy(() => import('../views/ContentCreators/CreadoresDeContenido').then((module) => ({ default: module.CreadoresDeContenido })))
@@ -45,6 +48,7 @@ import { KeyboardDoubleArrowUp } from '@mui/icons-material'
 import { BtnScrollTop } from '../components/customs/btnScrollTop'
 import { LoaderAnimation } from '../components/customs/LoaderAnimation'
 
+
 export const Router = (props) => {
 
   const [productos, setProductos] = useState(null);
@@ -79,7 +83,7 @@ export const Router = (props) => {
                     <Route path='/'                       element={<Navigate to='/inicio'/>}/>
                     <Route path='/inicio'                 element={<Inicio/>} />
                     <Route path='/categorias'             element={<Categorias/>} />
-                    
+                    <Route path='/temporadas'             element={<Temporadas/>} />
 
                     <Route path='/sobre-nosotros'         element={<SobreNosotros/>} />
                     <Route path='/donaciones'             element={<Donaciones/>} />
