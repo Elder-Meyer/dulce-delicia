@@ -26,7 +26,7 @@ export const navLinks =[
     },
     {
       title: "Temporadas",
-      path: "/sobre-nosotros", 
+      path: "/temporadas", 
       icon: <WbSunnyOutlinedIcon/>,
       iconSelected: <WbSunnyIcon />
     },
