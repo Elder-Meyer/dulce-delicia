@@ -11,18 +11,15 @@ import SimpleBackdrop                  from "../../customs/SimpleBackDrop";
 import { db }                          from "../../../config/firebase/firebaseDB";
 import { useAuth }                     from "../../../context/AuthContext";
 import { useTheme } from "@emotion/react";
-import { ToggleThemeSticky } from "../../customs/ToggleThemeSticky";
 
 const drawerWidth = 240;
 // const settings = ['Perfil', 'Cuenta', 'Panel', 'Cerrar Sesión'];
 
 export const NavBar = (props) => {
-  const {isDarkMode} = props;
   const theme = useTheme();
   const location = useLocation();
   const isHome = location.pathname === "/inicio";
 
-  const {handleThemeChange} = props;
   const { logout, user, profileImageUrl } = useAuth();
   const [data, setData] = useState(null);
   const [ruta, setRuta] = useState(null);
@@ -131,12 +128,6 @@ export const NavBar = (props) => {
           ))}
         </List>
       </Box>
-      <Divider />
-      <List>
-        <ListItem >
-            <ToggleThemeSticky isDarkMode={isDarkMode} handleThemeChange={handleThemeChange}/>
-        </ListItem>
-      </List>
     </>
   );
 
@@ -170,7 +161,6 @@ export const NavBar = (props) => {
               </Typography>            
             </Tooltip>
             </Box>
-            <ToggleThemeSticky isDarkMode={isDarkMode} handleThemeChange={handleThemeChange}/>
           </Toolbar>
 
           {/* Salida del drawer --- mobile */}
@@ -255,9 +245,9 @@ export const NavBar = (props) => {
                     color: "inherit",                    
                     display: "flex",
                     textTransform: "capitalize",
-                    "&:hover": { color: isDarkMode ? 'primary.light' : 'background.default' },
+                    "&:hover": { color: 'background.default' },
                     '&.active': { // Estilos para enlaces activos
-                      color: isDarkMode ? 'primary.light' : 'background.default',
+                      color: 'background.default',
                     },
                     '&:hover svg':{
                       transform: "scale(1.2) rotate(10deg)",  

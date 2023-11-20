@@ -47,7 +47,7 @@ import { KeyboardDoubleArrowUp } from '@mui/icons-material'
 import { BtnScrollTop } from '../components/customs/btnScrollTop'
 import { LoaderAnimation } from '../components/customs/LoaderAnimation'
 
-export const Router = ({isDarkMode, handleThemeChange}, props) => {
+export const Router = (props) => {
 
   const [productos, setProductos] = useState(null);
   const [tematicas, setTematicas] = useState(null);
@@ -72,7 +72,7 @@ export const Router = ({isDarkMode, handleThemeChange}, props) => {
       <AuthProvider>
         <CarritoProvider>
           <Box id="back-to-top-anchor" />
-          <NavBar isDarkMode={isDarkMode} handleThemeChange={handleThemeChange} />
+          <NavBar />
             <ScrollToTop>
               <Suspense fallback={<LoaderAnimation/>}>
                 <Routes>
