@@ -1,5 +1,3 @@
-import BrandingWatermarkOutlinedIcon from '@mui/icons-material/BrandingWatermarkOutlined';
-import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import CategoryIcon from '@mui/icons-material/Category';
 import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
@@ -12,12 +10,6 @@ import CakeOutlinedIcon from '@mui/icons-material/CakeOutlined';
 import CakeIcon from '@mui/icons-material/Cake';
 
 export const navLinks =[
-    {
-      title: "Marcas",
-      path: "/tematicas", 
-      icon: <BrandingWatermarkOutlinedIcon />,
-      iconSelected: <BrandingWatermarkIcon />
-    },
     {
       title: "Categorias",
       path: "/categorias", 

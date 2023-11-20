@@ -5,12 +5,12 @@ import 'firebase/compat/database';
 
 
 export const app = firebase.initializeApp({
-    "apiKey": "AIzaSyCXR191n7jFL7ZUvltSgLnWgd-DlO2n_yo",
-    "authDomain": "corazon-huasteco-bfbcc.firebaseapp.com",
-    "projectId": "corazon-huasteco-bfbcc",
-    "storageBucket": "corazon-huasteco-bfbcc.appspot.com",
-    "messagingSenderId": "636785870470",
-    "appId": "1:636785870470:web:8003e1a5c0f7eb157b3307",
-    "measurementId": "G-9CWJ2R8N32"
-  });
+  "apiKey": "AIzaSyAOElTgeP-IB5CKhhpkl7Z_kVugUl4HZ70",
+  "authDomain": "dulce-delicia-b3afa.firebaseapp.com",
+  "projectId": "dulce-delicia-b3afa",
+  "storageBucket": "dulce-delicia-b3afa.appspot.com",
+  "messagingSenderId": "496979070853",
+  "appId": "1:496979070853:web:010ee91c8aa1af7edafeec",
+  "measurementId": "G-4G406Y0GQ5"
+});
   

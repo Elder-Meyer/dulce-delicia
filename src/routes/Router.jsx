@@ -21,13 +21,6 @@ const RestorePassword       = lazy(() => import('../views/RestorePass/RestorePas
 const Solicitud             = lazy(() => import('../views/Request/Solicitud').then((module) => ({ default: module.Solicitud })))
 const DetalleProduct        = lazy(() => import('../views/Shop/DetalleProduct').then((module) => ({ default: module.DetalleProduct })))
 const Tienda                = lazy(() => import('../views/Shop/Tienda').then((module) => ({ default: module.Tienda })))
-const Danza                 = lazy(() => import('../views/Thematics/Danza/Danza').then((module) => ({ default: module.Danza })))
-const DetalleTematicas      = lazy(() => import('../views/Thematics/DetalleTematicas').then((module) => ({ default: module.DetalleTematicas })))
-const Gastronomia           = lazy(() => import('../views/Thematics/Gastronomia/Gastronomia').then((module) => ({ default: module.Gastronomia })))
-const Musica                = lazy(() => import('../views/Thematics/Musica/Musica').then((module) => ({ default: module.Musica })))
-const PanelTematicas        = lazy(() => import('../views/Thematics/PanelTematicas').then((module) => ({ default: module.PanelTematicas })))
-const Tradiciones           = lazy(() => import('../views/Thematics/Tradiciones/Tradiciones').then((module) => ({ default: module.Tradiciones })))
-const Vestimenta            = lazy(() => import('../views/Thematics/vestimenta/Vestimenta').then((module) => ({ default: module.Vestimenta })))
 // profiles components        
 const Administrador                  = lazy(() => import('../views/Profiles/Administrador/Administrador').then((module) => ({ default: module.Administrador })))
 const Colaborador                    = lazy(() => import('../views/Profiles/Colaborador/Colaborador').then((module) => ({ default: module.Colaborador })))
@@ -93,17 +86,6 @@ export const Router = (props) => {
                     <Route path='/aviso-de-privacidad'    element={<AvisoDePrivacidad/>} />
                     <Route path='/preguntas-frecuentes'   element={<PreguntasFrecuentes/>} />
                     
-                    {/* SubRutas -- tematicas */}
-                    <Route path="/tematicas/" /*AquiSePuedeRenderizarUnNavTematicas*/ >
-                      <Route index element={<PanelTematicas/>}/*yAquiSePuedeRenderizarUnListTematicas*/  />
-                      <Route path="vestimenta"          element={<Vestimenta />} />
-                      <Route path="danza"               element={<Danza/>} />
-                      <Route path="gastronomia"         element={<Gastronomia/>} />
-                      <Route path="musica"              element={<Musica/>} />
-                      <Route path="tradiciones"         element={<Tradiciones/>} />
-                      <Route path="*"                   element={<Error/>} />
-                    </Route>
-                    <Route path='tematicas/:id'     element={<DetalleTematicas tematicas={tematicas}/> } />
 
                     {/* Perfiles -- usuarios */}
                     <Route path='/user/consultor'     element={<ProtectedRoute>       <Consultor/>      </ProtectedRoute>} />
