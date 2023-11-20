@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Breadcrumbs, Link as MuiLink, Paper, useTheme } from '@mui/material'
+import { Box, Breadcrumbs, Link as MuiLink, useTheme } from '@mui/material'
 import { Link } from 'react-router-dom'
 import MuiSvgIcon from '@mui/material/SvgIcon';
 
@@ -8,7 +8,7 @@ export const Bread = (props) => {
     const theme = useTheme();
 
   return (
-    <Box sx={{p: 2, bgcolor: "background.paper"}} component={Paper}> {/*se puede comentar el fondo, y componente para ajustar algunas cosas */}
+    <Box sx={{p: 2, bgcolor: "background.paper"}}> {/*se puede comentar el fondo, y componente para ajustar algunas cosas */}
         <Breadcrumbs aria-label="migas de pan del sitio web" separator="/">
         {migas.map((item, index) => (
             <MigaDePan
