@@ -15,13 +15,13 @@ export const Temporadas = () => {
         <Container maxWidth="lg">
           <Grid container spacing={3} p={1}>
             <Grid item xs={12} sm={6} md={6} lg={6}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dia_de_muertos} alt="dia de muertos" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Halloween</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dia_del_amor} alt="dia del amor y la amistad" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Día del Amor y la Amistad</Typography>
               </Paper>
@@ -32,13 +32,13 @@ export const Temporadas = () => {
             
            
             <Grid item xs={12} sm={6} md={6} lg={6}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dia_del_nino} alt="dia del niño" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Dia del niño</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dia_de_las_madres} alt="dia de las madres" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Día de las madres </Typography>
               </Paper>
@@ -49,7 +49,7 @@ export const Temporadas = () => {
             
            
             <Grid item xs={12} sm={6} md={6} lg={6}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={navidad} alt="navidad" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Navidad</Typography>
               </Paper>

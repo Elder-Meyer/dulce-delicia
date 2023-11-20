@@ -25,19 +25,19 @@ export const Categorias = () => {
         <Container maxWidth="xl">
           <Grid container spacing={3} p={1}>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={botanas} alt="botanas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Botanas</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={caramelos} alt="caramelos" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Caramelos</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={chicles} alt="chicles" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Chicles</Typography>
               </Paper>
@@ -46,19 +46,19 @@ export const Categorias = () => {
 
             
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={chocolates} alt="chocolates" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Chocolates</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dulces_con_juguetes} alt="dulces con juguetes" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Dulces con Juguetes</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={dulces_tipicos} alt="dulces tipicos" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Dulces Tipicos</Typography>
               </Paper>
@@ -66,19 +66,19 @@ export const Categorias = () => {
 
 
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={galletas} alt="galletas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Galletas</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={gelatinas} alt="gelatinas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Gelatinas</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={gomitas} alt="gomitas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Gomitas</Typography>
               </Paper>
@@ -86,19 +86,19 @@ export const Categorias = () => {
 
 
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={malvaviscos} alt="malvaviscos" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Malvaviscos</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={mazapanes} alt="mazapanes" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Mazapanes</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={paletas} alt="paletas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Paletas</Typography>
               </Paper>
@@ -106,19 +106,19 @@ export const Categorias = () => {
 
 
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={polvitos} alt="polvitos" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Polvitos</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={pulpas} alt="pulpas" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Pulpas</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Paper>
+              <Paper elevation={0}>
                 <img src={snacks} alt="snacks" width="100%" height="100%"/>
                 <Typography variant='h5' color='primary' textAlign='center'>Snacks</Typography>
               </Paper>

@@ -32,7 +32,7 @@ export const navLinks =[
     },
     {
       title: "Personajes",
-      path: "/donaciones", 
+      path: "/personajes", 
       icon: <Face2OutlinedIcon/>,
       iconSelected: <Face2Icon />
     },
