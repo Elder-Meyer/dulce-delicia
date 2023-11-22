@@ -21,183 +21,184 @@ import { SliderProductoPinata } from './SliderProductoPinata';
 
 export const Inicio = () => {
   return (
-    <Container maxWidth="xl">
+    <>
       {/* SECTION ONE -- CARRUSEL */}
       <Paper component="article" elevation={0}>
         <Carrusel />
       </Paper>
-
       <WavyDivider invertColors/>
 
-      {/* SECTION TWO */}
-      <Paper component="article" elevation={0}>
-        <Container maxWidth="lg">
-            <Grid container columnSpacing={2} py={5} my={{xs: 0, md:5}}>
-              <Grid item container xs={12} lg={12} direction="column" justifyContent="center" alignItems="flex-start">
-                <Typography gutterBottom variant="h4" component="p" color="primary" fontWeight={700}>
-                  PRODUCTOS NAVIDEÑOS
-                </Typography>
+      <Container maxWidth="xl">
+        {/* SECTION TWO */}
+        <Paper component="article" elevation={0}>
+          <Container maxWidth="lg">
+              <Grid container columnSpacing={2} py={5} my={{xs: 0, md:5}}>
+                <Grid item container xs={12} lg={12} direction="column" justifyContent="center" alignItems="flex-start">
+                  <Typography gutterBottom variant="h4" component="p" color="primary" fontWeight={700}>
+                    PRODUCTOS NAVIDEÑOS
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} lg={12}>
+                  <SliderProductoNavidad CardHover={CardHover}/>
+                </Grid>
               </Grid>
-              <Grid item xs={12} lg={12}>
-                <SliderProductoNavidad CardHover={CardHover}/>
+          </Container>
+        </Paper>
+
+        {/* SECTION THREE  */}
+        <Paper component="article" elevation={0}>
+          <Container maxWidth="lg">
+            <Grid container spacing={3} p={1}>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    // sx={{display: "block", position: "relative"}}
+                    // sx={{transition: "transform .5s ease", "&:hover": { transform: "scale(1.2)"},}}
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_02}
+                    title="promo_02"
+                  />
+                </CardHover>
               </Grid>
-            </Grid>
-        </Container>
-      </Paper>
-
-      {/* SECTION THREE  */}
-      <Paper component="article" elevation={0}>
-        <Container maxWidth="lg">
-          <Grid container spacing={3} p={1}>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  // sx={{display: "block", position: "relative"}}
-                  // sx={{transition: "transform .5s ease", "&:hover": { transform: "scale(1.2)"},}}
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_02}
-                  title="promo_02"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_03}
-                  title="promo_03"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_04}
-                  title="promo_04"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_05}
-                  title="promo_05"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_06}
-                  title="promo_06"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_07}
-                  title="promo_07"
-                />
-              </CardHover>
-            </Grid>
-
-
-            <Grid item xs={12} sm={4} md={4} lg={4}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_08}
-                  title="promo_08"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={4} md={4} lg={4}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_09}
-                  title="promo_09"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={4} md={4} lg={4}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_10}
-                  title="promo_10"
-                />
-              </CardHover>
-            </Grid>
-            
-
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_11}
-                  title="promo_11"
-                />
-              </CardHover>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-              <CardHover>
-                <CardMedia
-                  component={"img"}
-                  width={"100%"}
-                  height={"100%"}
-                  image={promo_12}
-                  title="promo_12"
-                />
-              </CardHover>
-            </Grid>
-          </Grid>
-        </Container>
-      </Paper>
-
-
-      {/* SECTION FOUR */}
-      <Paper component="article" elevation={0}>
-        <Container maxWidth="lg">
-            <Grid container columnSpacing={2} py={5} my={{xs: 0, md:5}}>
-              <Grid item container xs={12} lg={12} direction="column" justifyContent="center" alignItems="flex-start">
-                <Typography gutterBottom variant="h4" component="p" color="primary" fontWeight={700}>
-                  BOLSAS PIÑATERAS
-                </Typography>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_03}
+                    title="promo_03"
+                  />
+                </CardHover>
               </Grid>
-              <Grid item xs={12} lg={12}>
-                <SliderProductoPinata CardHover={CardHover}/>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_04}
+                    title="promo_04"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_05}
+                    title="promo_05"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_06}
+                    title="promo_06"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_07}
+                    title="promo_07"
+                  />
+                </CardHover>
+              </Grid>
+
+
+              <Grid item xs={12} sm={4} md={4} lg={4}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_08}
+                    title="promo_08"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={4} md={4} lg={4}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_09}
+                    title="promo_09"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={4} md={4} lg={4}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_10}
+                    title="promo_10"
+                  />
+                </CardHover>
+              </Grid>
+              
+
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_11}
+                    title="promo_11"
+                  />
+                </CardHover>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6}>
+                <CardHover>
+                  <CardMedia
+                    component={"img"}
+                    width={"100%"}
+                    height={"100%"}
+                    image={promo_12}
+                    title="promo_12"
+                  />
+                </CardHover>
               </Grid>
             </Grid>
-        </Container>
-      </Paper>
-      
-    </Container>
+          </Container>
+        </Paper>
+
+
+        {/* SECTION FOUR */}
+        <Paper component="article" elevation={0}>
+          <Container maxWidth="lg">
+              <Grid container columnSpacing={2} py={5} my={{xs: 0, md:5}}>
+                <Grid item container xs={12} lg={12} direction="column" justifyContent="center" alignItems="flex-start">
+                  <Typography gutterBottom variant="h4" component="p" color="primary" fontWeight={700}>
+                    BOLSAS PIÑATERAS
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} lg={12}>
+                  <SliderProductoPinata CardHover={CardHover}/>
+                </Grid>
+              </Grid>
+          </Container>
+        </Paper>
+        
+      </Container>
+    </>
   );
 }
 
