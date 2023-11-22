@@ -2,13 +2,13 @@ import React from 'react'
 import { Box, useTheme } from '@mui/material'
 import { AnimatedIcon } from '../../components/Layout/NavBar/componentsNavBar'
 
-export const LoaderAnimation = () => {
+export const LoaderAnimation = ({section}) => {
   const theme = useTheme();
   
   const styles = `
     .container{
       width: 100%;
-      height: 80vh;
+      height: ${section ? "auto" : "80vh"} ;
       display: flex;
       justify-content: center;
       align-items: center;

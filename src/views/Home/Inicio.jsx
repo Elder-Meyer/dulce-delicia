@@ -17,9 +17,24 @@ import styled from '@emotion/styled';
 import { WavyDivider } from '../../components/customs/WavyDivider';
 import { SliderProductoNavidad } from './SliderProductoNavidad';
 import { SliderProductoPinata } from './SliderProductoPinata';
+import { getProductosNavidadData } from '../../utils/fnProductos';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 export const Inicio = () => {
+  const [productosNavidad, setProductosNavidad] = useState(null);     //estados para almacenar la info de las diferentes colecciones
+
+  const getProductosNavidad = async() => {                //obtenemos los datos en general para poder mandarlos a otros componentes
+    const p = await getProductosNavidadData();
+    setProductosNavidad(p.docs);
+  }
+
+  useEffect(()=>{                                     //ejecuta la funcion al inicio para obtener los datos
+    getProductosNavidad();
+    console.log(productosNavidad);
+  }, []);
+
   return (
     <>
       {/* SECTION ONE -- CARRUSEL */}
@@ -39,7 +54,7 @@ export const Inicio = () => {
                   </Typography>
                 </Grid>
                 <Grid item xs={12} lg={12}>
-                  <SliderProductoNavidad CardHover={CardHover}/>
+                  <SliderProductoNavidad CardHover={CardHover} productosNavidad={productosNavidad} />
                 </Grid>
               </Grid>
           </Container>
