@@ -74,7 +74,7 @@ export const Footer = () => {
               Ayuda
             </Typography>
             <LinkStyled to="">¿Cómo comprar?</LinkStyled>
-            <LinkStyled to="#">Envíos</LinkStyled>|
+            <LinkStyled to="#">Envíos</LinkStyled>
             <LinkStyled to="#">Facturas</LinkStyled>
             <LinkStyled to="preguntas-frecuentes">Preguntas frecuentes</LinkStyled>
             <LinkStyled to="aviso-de-privacidad">Terminos y condiciones</LinkStyled>
