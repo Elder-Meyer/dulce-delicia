@@ -14,8 +14,6 @@ export const WavyDivider = ({invertColors}) => {
             max-height: 60px;
             margin: 0;
             z-index:5;
-            
-            
         }
         
         .parallax1 > use {
@@ -105,7 +103,7 @@ export const WavyDivider = ({invertColors}) => {
                 <use xlinkHref="#gentle-wave" x="50" y="9" fill={invertColors ? theme.palette.text.disabled : theme.palette.primary.light}/>
             </g>
             <g className="parallax4">
-                <use xlinkHref="#gentle-wave" x="50" y="6" fill={invertColors ? theme.palette.background.paper : theme.palette.primary.main}/>  
+                <use xlinkHref="#gentle-wave" x="50" y="6" fill={invertColors ? theme.palette.background.default : theme.palette.primary.main}/>  
             </g>
         </svg>
     </Box>

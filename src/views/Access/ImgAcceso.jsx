@@ -1,5 +1,5 @@
 import { CardMedia } from '@mui/material'
-import imgMural      from "../../assets/img/inicio/imgMural-01.webp"
+import imgMural      from "../../assets/img/inicio/imgSierra.webp"
 
 export const ImgAcceso = () => {
   return (

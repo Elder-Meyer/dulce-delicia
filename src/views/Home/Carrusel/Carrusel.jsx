@@ -1,9 +1,9 @@
 import { Box } from '@mui/material'
 import { Slideshow, Slide, TextoSlide} from "./Slideshow"
 import React from 'react'
-import img1 from "../../../assets/img/inicio/catedral-01.webp"
-import img2 from "../../../assets/img/inicio/Foto-centro-02.webp"
-import img3 from "../../../assets/img/inicio/imgMural-01.webp"
+import img1 from "../../../assets/img/inicio/banner_1.webp"
+import img2 from "../../../assets/img/inicio/banner_2.webp"
+import img3 from "../../../assets/img/inicio/banner_3.webp"
 import { Link } from 'react-router-dom'
 
 export const Carrusel = () => {
@@ -14,33 +14,21 @@ export const Carrusel = () => {
     }}>
         <Slideshow controles={true} autoplay={true} /*velocidad='500' intervalo='3000'*/>
             <Slide>                
-                <Link to='/tematicas'>
+                <Link to='/categorias'>
                     <img src={img1} rel='preload' as="image" alt='img-carrusel-catedral-de-huejutla' />
-                </Link>                
-                <TextoSlide>
-                    <p>Catedral de Huejutla</p>
-                    <p><i>Imagen por Ceci Mandujano</i></p>
-                </TextoSlide>
+                </Link>
             </Slide>
 
             <Slide>
-                <Link to='/sobre-nosotros'>
+                <Link to='/temporadas'>
                     <img src={img2} rel='preload' as="image" alt='img-carrusel-huejutla-centro' />
                 </Link>
-                <TextoSlide>
-                    <p>Huejutla Centro</p>
-                    <p><i>Imagen por Nadhiezda Cruz</i></p>
-                </TextoSlide>
             </Slide>
 
             <Slide>
-                <Link to='/tienda'>
+                <Link to='/personajes'>
                     <img src={img3} rel='preload' as="image" alt='img-carrusel-mural-emblematico' />                    
                 </Link>
-                <TextoSlide>
-                    <p>Mural Emblematico</p>
-                    <p><i>Imagen por Salomón Hernández</i></p>
-                </TextoSlide>
             </Slide>
 
         </Slideshow>

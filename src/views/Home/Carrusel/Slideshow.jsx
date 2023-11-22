@@ -122,11 +122,11 @@ const ContenedorPrincipal = styled('div')({
     overflow: "hidden",
     transition: `0.3s ease all`,
     zIndex: 10,
-    height: "90vh",
+    height: "auto",
     position: "relative",
 
 	"@media screen and (max-width: 899px)": {
-		height: "65vh",
+		height: "auto",
 
 		'&':{
 			img: {
@@ -141,7 +141,6 @@ const ContenedorPrincipal = styled('div')({
       verticalAlign: "top",
 	  objectFit: "cover",
 	  objectPosition: "center",
-	  filter: "brightness(70%) contrast(110%)", // Agrega el filtro a la imagen
     },
   });
 
@@ -202,7 +201,7 @@ const ContenedorPrincipal = styled('div')({
 
   const Boton = styled(Button)(({ derecho, theme }) => ({
     pointerEvents: "all",
-    background: theme.palette.background.paper,
+    background: theme.palette.background.default,
     border: "none",
     cursor: "pointer",
     outline: "none",
@@ -215,7 +214,7 @@ const ContenedorPrincipal = styled('div')({
     position: "absolute",
     transition: "0.3s ease all",
     // '&:hover':  {
-	// 	background: "rgba(0,0,0,.2)",
+	// background: theme.palette.background.default,
 	// 	path: {
 	// 		fill: "#fff",
 	// 	}
