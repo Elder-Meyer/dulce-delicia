@@ -137,7 +137,7 @@ export const NavBar = (props) => {
   return (
     <>
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar position="sticky">
           <SimpleBackdrop open={open}/>
           {/* Primer tool */}
           {/* desktop*/}
@@ -365,18 +365,6 @@ export const NavBar = (props) => {
           </Toolbar>
         </AppBar>
       </ElevationScroll>
-      {/* separadores de nav y cotenido */}
-      {
-        isHome 
-        ? 
-          null
-        : 
-        <>
-          <Toolbar sx={{ display: { xs: "none", md: "flex" } }} />
-          <Toolbar />
-        </>
-      }
-      
     </>
   );
 };
