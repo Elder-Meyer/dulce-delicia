@@ -8,28 +8,29 @@ export default defineConfig({
     react(),
     VitePWA({ 
       registerType: 'autoUpdate',
-      workbox: {
-        cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg,json}'],
-        runtimeCaching: [{
-          handler: 'NetworkFirst',
-          urlPattern: /\/api\/.*\/*.json/,
-          method: 'POST',
-          options: {
-            backgroundSync: {
-              name: 'myQueueName',
-              options: {
-                maxRetentionTime: 24 * 60
-              }
-            }
-          }
-        }]
-      },
       devOptions: {
         enabled: true,
-        navigateFallbackAllowlist: [/^index.html$/]
+        // navigateFallbackAllowlist: [/^index.html$/]
       },
-      includeAssets: ['favicon.ico', 'logo.jpg', 'robots.txt', 'apple-touch-icon.png'],
+      injectRegister: 'auto',
+
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,jpg,jpeg,avif,json}'],
+        // runtimeCaching: [{
+        //   handler: 'NetworkFirst',
+        //   urlPattern: /\/api\/.*\/*.json/,
+        //   method: 'POST',
+        //   options: {
+        //     backgroundSync: {
+        //       name: 'myQueueName',
+        //       options: {
+        //         maxRetentionTime: 24 * 60
+        //       }
+        //     }
+        //   }
+        // }]
+      },
+      includeAssets: ['favicon.ico', 'logo.jpg', 'images/*.webp', 'images/*.avif', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Dulce Delicia',
         short_name: 'Dulce Delicia',
