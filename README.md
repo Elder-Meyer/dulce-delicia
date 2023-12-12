@@ -1,6 +1,6 @@
 # React + Vite
 
-Proyecto Dulce-Delicia
+Proyecto Dulce-Delicia by Elder
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
